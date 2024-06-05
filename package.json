@@ -1,0 +1,55 @@
+{
+  "name": "kazakstantraval",
+  "version": "0.0.1",
+  "description": "website about the nature in the Kaz",
+  "productName": "KazTravel",
+  "author": "Weegoos <batyr.ashim05@mail.ru>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue ./",
+    "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "test": "echo \"No test specified\" && exit 0",
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "start:backend": "cd backend && nodemon server.js",
+    "start:frontend": "cd src && quasar dev",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.4",
+    "axios": "^1.6.8",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "gsap": "^3.12.5",
+    "mongoose": "^8.4.1",
+    "mysql2": "^3.9.7",
+    "nodemailer": "^6.9.13",
+    "passport": "^0.7.0",
+    "passport-local-mongoose": "^8.0.0",
+    "pinia": "^2.0.11",
+    "vue": "^3.4.18",
+    "vue-i18n": "^9.0.0",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@intlify/vite-plugin-vue-i18n": "^3.3.1",
+    "@quasar/app-vite": "^1.8.0",
+    "autoprefixer": "^10.4.2",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "nodemon": "^3.1.3",
+    "postcss": "^8.4.14",
+    "prettier": "^2.5.1",
+    "quasar": "^2.16.4",
+    "vite-plugin-checker": "^0.6.4"
+  },
+  "engines": {
+    "node": "^20 || ^18 || ^16",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}

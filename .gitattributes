@@ -1,0 +1,2 @@
+src/assets/Astana.mp4 filter=lfs diff=lfs merge=lfs -text
+src/assets/Astana.MOV filter=lfs diff=lfs merge=lfs -text

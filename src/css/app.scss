@@ -1,0 +1,37 @@
+// app global css in SCSS form
+@font-face {
+    font-family: Montserrat;
+    src: url('/fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Montserrat_italic;
+    src: url('/fonts/Montserrat-Italic-VariableFont_wght.ttf');
+}
+
+:root{
+    --cityColor: #EC7636;
+}
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Montserrat;
+}
+
+img{
+    object-fit: cover;
+}
+
+input, textarea{
+    outline: none;
+    resize: none;
+    background-color: transparent;
+}
+
+html, body{
+    overflow-x: hidden;
+}
